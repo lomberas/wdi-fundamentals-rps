@@ -47,28 +47,28 @@ function getComputerMove(move) {
         }
 
         if (playerMove == "scissors" && computerMove == "paper") {
-            winner = "player"    
+            winner = "player";    
         }
 
         if (playerMove == "scissors" && computerMove == "rock") {
-            winner = "computer"
+            winner = "computer";
         }
 
         if (playerMove == "paper" && computerMove == "scissors") {
-            winner = "computer"
+            winner = "computer";
         }
 
 
         if (playerMove == "rock" && computerMove == "scissors") {
-            winner = "player"
+            winner = "player";
         }
 
         if (playerMove == "paper" && computerMove == "rock") {
-            winner = "player"
+            winner = "player";
         }
 
         if (playerMove == "rock" && computerMove == "paper") {
-            winner = "computer"
+            winner = "computer";
         }
 
 
@@ -101,6 +101,7 @@ console.log("Playing the game til best of " + limit);
                 countWinsByComputer++;
             }
      }
+        console.log("The score is, human " + countWinsByPlayer + " robot " + countWinsByComputer);
 
         if (countWinsByPlayer > countWinsByComputer) {
             console.log("The human Won!");
@@ -111,7 +112,7 @@ console.log("Playing the game til best of " + limit);
   }
   
  
-playBestOf(3);
+playBestOf(5);
 
 
 
